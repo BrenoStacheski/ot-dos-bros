@@ -1,53 +1,30 @@
-# OpenTibiaBR - Canary
+# Globaiak - Canary
 
-[![Discord Channel](https://img.shields.io/discord/528117503952551936.svg?style=flat-square&logo=discord)](https://discord.gg/gvTj5sh9Mp)
-[![Build - Ubuntu](https://github.com/opentibiabr/canary/actions/workflows/build-ubuntu.yml/badge.svg)](https://github.com/opentibiabr/canary/actions/workflows/build-ubuntu.yml)
-[![Build - Windows - CMake](https://github.com/opentibiabr/canary/actions/workflows/build-windows-cmake.yml/badge.svg)](https://github.com/opentibiabr/canary/actions/workflows/build-windows-cmake.yml)
-[![Build - Windows - Solution](https://github.com/opentibiabr/canary/actions/workflows/build-windows-solution.yml/badge.svg)](https://github.com/opentibiabr/canary/actions/workflows/build-windows-solution.yml)
-[![Build - Docker](https://github.com/opentibiabr/canary/actions/workflows/build-docker.yml/badge.svg)](https://github.com/opentibiabr/canary/actions/workflows/build-docker.yml)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=opentibiabr_canary&metric=alert_status)](https://sonarcloud.io/dashboard?id=opentibiabr_canary)
-![GitHub repo size](https://img.shields.io/github/repo-size/opentibiabr/canary)
-[![GitHub](https://img.shields.io/github/license/opentibiabr/canary)](https://github.com/opentibiabr/canary/blob/main/LICENSE)
-
-OpenTibiaBR - Canary is a free and open-source MMORPG server emulator written in C++. It is a fork of the [OTServBR-Global](https://github.com/opentibiabr/otservbr-global) project. To connect to the server and to take a stable experience, you can use [mehah's otclient](https://github.com/mehah/otclient)
-or [tibia client](https://github.com/dudantas/tibia-client/releases/latest) and if you want to edit something, check
-our [customized tools](https://docs.opentibiabr.com/opentibiabr/downloads/tools). If you want to edit the map, use our own [remere's map editor](https://github.com/opentibiabr/remeres-map-editor/).
+Globaiak is an alternative Tibia server created by a group of friends who wanted to relive the nostalgia of the good old days of playing Tibia. Our goal is to provide the same fun and excitement that we experienced back then. Join us and have fun!
 
 ## Getting Started
 
-* [Gitbook](https://docs.opentibiabr.com/opentibiabr/projects/canary).
-* [Wiki](https://github.com/opentibiabr/canary/wiki).
+To configure the project, you’ll first need to download and install the necessary tools:
 
-## Support
+1. XAMPP (download link): XAMPP for MySQL and PHP
+    XAMPP is a free and open-source cross-platform web server solution that includes MySQL, PHP, and Apache.
 
-If you need help, please visit our [discord](https://discord.gg/gvTj5sh9Mp). Our issue tracker is not a support forum, and using it as one will result in your issue being closed.
+2. Start MySQL: After installing XAMPP, launch the XAMPP Control Panel. Then, start the MySQL instance by clicking Start next to the MySQL module. Once MySQL is running, click Admin to open the phpMyAdmin control panel.
 
-## Contributing
+![alt text](image.png)
 
-Here are some ways you can contribute:
+3. Create the Database: In phpMyAdmin, click on New (or "Novo" if your phpMyAdmin is in another language) to create a new database.
 
-* [Issue Tracker](https://github.com/opentibiabr/canary/issues/new/choose).
-* [Pull Request](https://github.com/opentibiabr/canary/pulls).
+![alt text](image-1.png)
 
-You are subject to our code of conduct, read at [this link](https://github.com/opentibiabr/canary/blob/main/CODE_OF_CONDUCT.md).
+4. Import the SQL Schema: Next, click on the Import tab to upload the SQL schema file. This file will be located within the otserv project folder.
 
-## Special Thanks
+![alt text](image-2.png)
 
-- Our contributors ([Canary](https://github.com/opentibiabr/canary/graphs/contributors) | [OTServBR-Global](https://github.com/opentibiabr/otservbr-global/graphs/contributors)).
+5. Select the SQL File: In the Import section, click the Choose File button and select the .sql schema file to migrate the database.
 
-## Sponsors
+![alt text](image-3.png)
 
-See our [donate page](https://docs.opentibiabr.com/home/donate).
+These are the steps so that the website is correctly configured, but this project will be up soon in this repository;
 
-## Project supported by JetBrains
-
-We extend our heartfelt gratitude to Jetbrains for generously granting us licenses to collaborate on this and various
-other open-source initiatives.
-
-<a href="https://jb.gg/OpenSourceSupport/?from=https://github.com/opentibiabr/canary/">
-  <img src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.svg" alt="JetBrains" width="150" />
-</a>
-
-## Partners
-
-[![Supported by OTServ Brasil](https://raw.githubusercontent.com/otbr/otserv-brasil/main/otbr.png)](https://forums.otserv.com.br)
+After that just open project on file explorer and run canary.exe, open your Tibia client and login :D
